@@ -1,0 +1,235 @@
+/* FONTS */
+@import url(general-sans.css);
+
+
+/* VARIABLES */
+:root {
+    --color-dark: #0b0c1c;
+    --color-brand: #3f47ae;
+    --color-brand-light: #6970dd;
+    --color-brand-rgb: 78, 87, 212;
+    --color-body: #727272;
+    --font-base:  'GeneralSans-Variable' , sans-serif;
+    --box-shadow: 0px 15px 25px rgba(0,0,0,0.08);
+    --transition: all 0.5s ease;
+}
+
+
+/* HELPERS */
+body {
+    font-family: var(--font-base);
+    line-height: 1.7;
+    color: var(--color-body);
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: 600;
+    color: var(--color-dark);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-brand);
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--color-brand-light);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section-padding {
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
+.section-title {
+    margin-bottom: 60px;
+}
+
+/* BUTTON */
+.btn {
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: capitalize;
+    border-radius: 2px;
+    padding: 10px 24px;
+}
+
+.btn-brand {
+    background-color: var(--color-brand);
+    border-color: var(--color-brand);
+    color: white;
+}
+
+.btn-brand:hover {
+    background-color: var(--color-brand-light);
+    border-color: var(--color-brand-light);
+    color: white;
+}
+
+/* NAVBAR */
+.navbar {
+    box-shadow: var(--box-shadow);
+}
+
+.navbar-brand img{
+    height: 30px;
+}
+
+.navbar-nav .nav-link {
+    color: var(--color-dark);
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--color-brand);
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--color-brand)
+}
+
+
+/* HERO */
+#hero {
+    background: linear-gradient(rgba(var(--color-brand-rgb), 0.7), rgba(var(--color-brand-rgb), 0.6)), url(../images/hero.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* ABOUT */
+
+.section-title .line {
+    width: 60px;
+    height: 4px;
+    background-color: var(--color-brand);
+    margin: 16px auto 24px auto;
+
+}
+
+.section-title p {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.iconbox {
+    width: 70px;
+    height: 70px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(var(--color-brand-rgb), 0.1);
+    color: var(--color-brand);
+    font-size: 34px;
+    flex: none;
+}
+
+
+/* PRODUCTS */
+.product-content {
+    background-color: var(--color-brand);
+    width: 170px;
+    position: relative;
+    transform: translate(-50%);
+    padding: 10px;
+    left: 50%;
+    bottom: -10px;
+    transition: var(--transition);
+    opacity: 0;
+}
+
+.product img {
+    max-height: 400px;
+}
+
+.product:hover .product-content {
+    opacity: 1;
+    bottom: 24px;
+}
+
+.image-zoom {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-zoom-warpper {
+    overflow: hidden;
+    position: relative;
+}
+
+.image-zoom-warpper img{
+    transition: var(--transition);
+}
+
+.image-zoom:hover .image-zoom-warpper img {
+    transform: scale(1.1);
+}
+
+
+/* CONTACT */
+#contact {
+    background-color: var(--color-dark);
+}
+
+#contact h6 {
+    font-weight: 100;
+}
+
+#contact .section-title {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.contact-icon {
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+.contact-padding {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+
+/* PRODUCT PAGE ARABIC TEXT */
+.arabic-text {
+    font-family: "Noto Naskh Arabic", serif;
+    margin-right: 60px;
+}
+
+.accordion-button {
+    border: none;
+    background-color: white;
+    color: var(--color-dark);
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.accordion-button:hover {
+    background-color: var(--color-brand-light);
+    color: white;
+}
+
+.accordion-button:not(.collapsed) {
+    box-shadow: none;
+    border: none;
+    background-color: var(--color-brand-light);
+    color: white;
+}
+
+.accordion-body ul li {
+    list-style: number;
+}
