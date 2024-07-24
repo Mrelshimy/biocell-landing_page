@@ -101,7 +101,7 @@ img {
 
 /* HERO */
 #hero {
-    background: linear-gradient(rgba(var(--color-brand-rgb), 0.7), rgba(var(--color-brand-rgb), 0.6)), url(../images/hero.jpg);
+    background: linear-gradient(rgba(var(--color-brand-rgb), 0.7), rgba(var(--color-brand-rgb), 0.6)), url(../images/jpeg-optimizer_hero.jpg);
     background-position: center;
     background-size: cover;
 }
